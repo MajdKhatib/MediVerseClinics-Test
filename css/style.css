@@ -1,0 +1,123 @@
+:root {
+  --primary: #13c5dd;
+  --secondary: #354f8e;
+  --light: #eff5f9;
+  --dark: #1d2a4d;
+}
+
+.settings-panel {
+  top: calc(50% - 140px);
+  position: fixed;
+  z-index: 1020;
+  top: calc(50% - 200px);
+  left: 0;
+}
+
+.settings-panel > * {
+  position: relative;
+  text-align: center;
+  height: 46px;
+  width: 46px;
+  clear: both;
+}
+.settings-panel .settings-panel-btn {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.settings-panel-buy-now .settings-panel-btn,
+.settings-panel .settings-panel-btn {
+  border-radius: 0 !important;
+  overflow: hidden;
+}
+.settings-panel-buy-now .settings-panel-btn {
+  text-align: left;
+  padding-left: 7px;
+  font-weight: 500;
+  transition: width 0.2s ease 0s;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #5c6895;
+  border-color: #5c6895;
+}
+a,
+area,
+button,
+[role="button"],
+input:not([type="range"]),
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+a {
+  color: #787878;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.settings-panel-buy-now .settings-panel-btn img {
+  position: relative;
+  margin: 0 10px 0 0;
+}
+.settings-panel .settings-panel-btn img {
+  max-width: 100%;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.hero-header {
+  background: url(../img/hero.jpg) top right no-repeat;
+  background-size: cover;
+}
+
+.service-item {
+  position: relative;
+  height: 350px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+.service-item .service-icon {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  border-radius: 50%;
+  transform: rotate(-14deg);
+}
+
+.service-item .service-icon i {
+  transform: rotate(15deg);
+}
+
+.service-item a.btn {
+  position: absolute;
+  width: 60px;
+  bottom: -48px;
+  left: 50%;
+  margin-left: -30px;
+  opacity: 0;
+}
+
+.service-item:hover a.btn {
+  bottom: -24px;
+  opacity: 1;
+}
